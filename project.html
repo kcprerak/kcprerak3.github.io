@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic Page - Massively by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Main</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">This is Massively</a></li>
+							<li class="active"><a href="Ideas.html">Future</a></li>
+							<li class="active"><a href="project.html">The Project</a></li>
+							<li class="active"><a href="Personal.html">Personal Profile</a></li>
+							<li class="active"><a href="Interest.html">Interest in IT</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<h1>Project<br />
+									Lock & Key</h1>
+								</header>
+								<div class="image main"><img src="images/hk.jpeg" alt="" /></div>
+								<body>
+								<p>	The idea of the project Is to create a basic encryption and decryption program with python for messages being sent over a simple LAN connection between two machines in order to prevent malicious attacks such as MITM attacks or sniffer attacks both of which hijack your messages being sent and either alter them (MITM) or view them (Sniffer attack) without your knowledge or consent and thus through the encryption and decryption program offer basic protection.
+								<p>	In the modern day and age, the easiest and most popular way to communicate is using technology and programs such as iMessage or snapchat and so people who have malicious intent create programs to steal and hijack messages sent over unsecured networks with 35% of exploitations being a direct result of a MITM attack as stated by IBM’s X-force Threat intelligence Index 2018. So, my reasoning for choosing this idea for my project is to not only demonstrate the importance of encryption in the modern age but to also learn and practise how to set up a basic encryption and decryption program in hopes it will aid in my theoretical and practical knowledge of cybersecurity in hopes it will aid achieving my future goals
+								<P>	My project requires setting up a simple chat between two machines over a LAN network that is not encrypted and then program a simple ‘sniffer’ attack that will be able to display the messages that are being sent and received by the two machines. A sniffer attack is where the theft and interception of data occurs with the malicious attacker using a packet sniffer which is a program (I will create myself) hijacking the message and displaying it in plaintext to the malicious attacker.
+								<p>Additionally, a program that is able to read the networks packets such as Wireshark will be used to perform the sniffer attack if for whatever reason the self-made sniffer program is either insufficient or unable to hijack the message . subsequently, I will then create an encryption and decryption program that follows the idea of private key encryption where the key used to encrypt the message being sent is also the key that will decrypt the message, basically meaning the same algorithm is encrypting the message and decrypting the message. Through this process the messages will be safely encrypted and so instead of the software now displaying the messages in an understandable and clear way the messages sent will now be encrypted and thus will be unable to be read by the malicious attacker unless they are able to acquire the key used to encrypt the message as due to the nature of private key encryption the same key was also used to decrypt the message allowing the malicious attacker to view the message.
+ 								<p>However, a solution to the issue is rather than creating a private key algorithm that will use the same key I will have to create a public key algorithm which would prove to be more difficult to wright with my current programming knowledge but if my ability does improve by the time assignment 3 is undertaken then with the public key encryption the LAN messages sent between the two machines will become near impossible to decrypt. A public key encryption is near impossible to decrypt due to the fact that two keys are used to separately encrypt and decrypt the message. The key used to encrypt the message is left publicly available whilst the key that is used to decrypt the algorithm is privately held and is a secret thus making the attacker unable to view the message without the both the algorithm and the private key used to decode the encryption. The project is not commercially viable with the current blueprint but could be developed further once I have garnered a comprehensive knowledge of programming, Network security and other complex knowledge of cybersecurity concepts that apply to the cryptography.
+								<p>In order to usefully undertake and complete the project with maximum efficiency two machines will be required in order to send the messages over the LAN connection, the two machines can either be two home computers which is available to me or with two raspberry PI’s if the two home machines are unavailable for any reason when undertaking the project. Additionally, Python 3 will be required in order to code the LAN network, chat messages, sniffer attack and either the symmetrical encryption algorithm or the asymmetrical encryption algorithm. Additionally the program WireShark will also be required as a reassurance for the sniffer attack.
+								<p>The Hardware required to undertake the project is already available with a backup in place (in the form of raspberry pi) in-case of an emergency. The skills required to write the many skills is currently at a basic level but the necessary skills and programming knowledge required to create a LAN connection, basic sniffer attack and a basic symmetric encryption is available and obtainable through the internet however the programming skills needed for an asymmetrical encryption will be more difficult to obtain due to the complexity of the task and the time constraints
+								<p>If the project is successfully achieved with the encryption working in preventing the sniffer attack from understanding the message, then the problem of the MITM/sniffer attack will be solved allowing myself to have learnt the necessary fundamental knowledge in creating preventative measures from sniffer attacks further adding key skills needed to reach my career aspirations
+								</body>
+							</section>
+
+					</div>
+
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
